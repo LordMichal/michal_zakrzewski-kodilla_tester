@@ -6,7 +6,7 @@ public class MainExtended {
         int pietro = 1;
         String pokoj = "Kinowy";
         boolean praca = false;
-        System.out.println("Czy jesteś w domu "+ wdomu );
+        System.out.println("Czy jestes w domu "+ wdomu );
         System.out.println("Czy adres to " + adres );
         System.out.println("A numer to " + numer);
         System.out.println("Pietro " + pietro);
