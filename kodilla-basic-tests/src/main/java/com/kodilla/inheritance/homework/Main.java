@@ -6,6 +6,6 @@ public class Main  {
         OperatingSystem linux = new OperatingSystem(1997);
 
         windowsxp.turnOff();
-        linux.turnOn();
+        linux.turnOff();
     }
 }
