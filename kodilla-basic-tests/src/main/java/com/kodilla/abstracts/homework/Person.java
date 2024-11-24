@@ -12,7 +12,7 @@ public class Person {
     }
 
     public String printResponsibilities() {
-        System.out.println(firstName + " pracuje jako " + job.getClass());
+        System.out.println(firstName + " pracuje jako " + job);
         System.out.println(job.printresponsibilities());
         return"" ;
     }

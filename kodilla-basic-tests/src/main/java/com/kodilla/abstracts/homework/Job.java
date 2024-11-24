@@ -8,9 +8,12 @@ public abstract class Job {
         this.salary = salary;
         this.responsibilities = responsibilities;
     }
-    public Object printresponsibilities(){
-        System.out.println("Obowiązki " + responsibilities);
-        return null;
+    public String printresponsibilities(){
+        return " Obowiązki:" + responsibilities;
     }
+//    public Object printresponsibilities(){
+//        System.out.println("Obowiązki " + responsibilities);
+//        return null;
+//    }
 }
 
