@@ -1,4 +1,8 @@
-package com.kodilla.collections.interfaces;
+package com.kodilla.interfaces;
+
+import com.kodilla.interfaces.Shape;
+import com.kodilla.interfaces.Square;
+import com.kodilla.interfaces.Circle;
 
 public class InterfacesDemo {
     public static void main(String[] args) {
@@ -8,7 +12,7 @@ public class InterfacesDemo {
         System.out.println(square.getPerimeter());
 
         Circle circle = new Circle(7);
-        System.out.println(circle.GetArea());
+        System.out.println(circle.getArea());
         System.out.println(circle.getPerimeter());
     }
 }
