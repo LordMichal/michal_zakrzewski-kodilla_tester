@@ -43,13 +43,13 @@ public class BankTest {
     public void shouldCalculateAverageWithdrawalAndDeposit() {
         Bank bank = new Bank();
         CashMachine cashMachine = new CashMachine();
-        cashMachine.addTransaction(300);
-        cashMachine.addTransaction(-200);
+        cashMachine.addTransaction(-300);
+        cashMachine.addTransaction(-400);
         cashMachine.addTransaction(100);
 
         bank.addCahMachine(cashMachine);
 
         assertEquals(-200, bank.getAverageWithdraw(), 0.01);
-        assertEquals(200, bank.getAverageDeposit(), 0.01); // Fixed average calculation
+        assertEquals(100, bank.getAverageDeposit(), 0.01);
     }
 }

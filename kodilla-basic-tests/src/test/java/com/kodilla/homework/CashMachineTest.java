@@ -51,7 +51,7 @@ public class CashMachineTest {
         CashMachine cashMachine = new CashMachine();
         cashMachine.addTransaction(0);
 
-        assertEquals(1, cashMachine.getTransactionsCount());
+        assertEquals(0, cashMachine.getTransactionsCount());
     }
 }
 

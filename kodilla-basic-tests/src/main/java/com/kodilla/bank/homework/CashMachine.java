@@ -2,12 +2,10 @@ package com.kodilla.bank.homework;
 
 public class CashMachine {
     public static int[] transactions;
-    //    private  int balance;
     private int numberOfTransaction;
 
     public CashMachine() {
-        this.transactions = new int[0];
-//        this.balance = 0;
+        transactions = new int[0];
         this.numberOfTransaction = 0;
     }
 
@@ -36,7 +34,7 @@ public class CashMachine {
     }
 
     public int[] getTransaction() {
-        return null;
+        return transactions;
     }
 
 

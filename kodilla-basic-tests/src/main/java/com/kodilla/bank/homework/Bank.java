@@ -28,7 +28,7 @@ public class Bank{
     public int getWithdawTransactionCount() {
         int withdraws = 0;
         for (CashMachine cashMachine : cashMachines) {
-            for (int transaction : cashMachine.getTransaction()) {
+            for (int transaction : cashMachine.transactions) {
                 if (transaction < 0) {
                     withdraws++;
                 }
@@ -54,7 +54,7 @@ public class Bank{
         int totalWithdraw = 0;
         int withdrawaCount = 0;
         for (CashMachine cashMachine : cashMachines){
-            for (int transaction : cashMachine.transactions) {
+            for (int transaction : cashMachine.getTransaction()) {
                 totalWithdraw += transaction;
                 withdrawaCount++;
             }
