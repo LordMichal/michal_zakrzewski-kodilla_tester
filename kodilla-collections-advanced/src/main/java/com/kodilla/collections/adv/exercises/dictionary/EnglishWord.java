@@ -30,9 +30,4 @@ public class EnglishWord {
     public int hashCode() {
         return Objects.hash(partOfSpeech, word);
     }
-
-
-
-
-
 }
