@@ -15,7 +15,7 @@ public class Application {
         students.add(new Student("Kacper", teacher1));
         students.add(new Student("Jakub", teacher2));
         students.add(new Student("Dawid", teacher2));
-        students.add(new Student("Tomasz", null));
+        students.add(new Student("Tomasz", teacher2));
         students.add(new Student("Daniel", null));
         students.add(new Student("Kuba", null));
         students.add(new Student("Filip", teacher2));
@@ -26,8 +26,7 @@ public class Application {
         List<String> pairs = new ArrayList<>();
         for (Student student : students){
             Optional<Teacher> optionalTeacher = Optional.ofNullable(student.getTeacher());
-            String techerName = optionalTeacher.map(Teacher::getName).orElse(("<undefined>"));
-            pairs.add("Uczen: " + student.getName() + ", Nauczyciel: " + techerName);
+            pairs.add("Uczen: " + student.getName() + ", Nauczyciel: " + student.getTeacherName());
         }
         return pairs;
     }
