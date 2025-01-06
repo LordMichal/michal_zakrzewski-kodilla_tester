@@ -1,5 +1,7 @@
 package com.kodilla.mockito;
 
+import com.kodilla.mockito.notification.Client;
+import com.kodilla.mockito.notification.Notification;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
